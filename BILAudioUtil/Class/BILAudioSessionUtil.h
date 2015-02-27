@@ -1,7 +1,7 @@
-#if TARGET_OS_IPHONE && !(TARGET_IPHONE_SIMULATOR)
-
-
 #import <Foundation/Foundation.h>
+
+
+#if TARGET_OS_IPHONE && !(TARGET_IPHONE_SIMULATOR)
 
 
 @interface BILAudioSessionUtil : NSObject

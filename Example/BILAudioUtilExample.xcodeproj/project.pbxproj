@@ -14,6 +14,8 @@
 		199A0CD41AA084C3005FBC01 /* BILAudioVolumeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CCC1AA084C3005FBC01 /* BILAudioVolumeManager.m */; };
 		199A0CD51AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CCF1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m */; };
 		199A0CD61AA084C3005FBC01 /* BILStringEncrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CD21AA084C3005FBC01 /* BILStringEncrypter.m */; };
+		19F969EF1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F969EE1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib */; };
+		19F969F11AA08A4200514C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F969F01AA08A4200514C68 /* Main.storyboard */; };
 		7A47B26E71CB9A1C311D8F73 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6435DCF82A0EFB72765318 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		199A0CCF1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILAudioVolumeManagerTestViewController.m; sourceTree = "<group>"; };
 		199A0CD11AA084C3005FBC01 /* BILStringEncrypter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILStringEncrypter.h; sourceTree = "<group>"; };
 		199A0CD21AA084C3005FBC01 /* BILStringEncrypter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILStringEncrypter.m; sourceTree = "<group>"; };
+		19F969EE1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BILAudioVolumeManagerTestViewController.xib; sourceTree = "<group>"; };
+		19F969F01AA08A4200514C68 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4E6435DCF82A0EFB72765318 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45431AD5EF99262E33601FC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +77,7 @@
 			children = (
 				199A0CA71AA083C4005FBC01 /* AppDelegate.h */,
 				199A0CA81AA083C4005FBC01 /* AppDelegate.m */,
+				19F969F01AA08A4200514C68 /* Main.storyboard */,
 				199A0CB01AA083C4005FBC01 /* Images.xcassets */,
 				199A0CA31AA083C4005FBC01 /* Supporting Files */,
 			);
@@ -115,6 +120,7 @@
 			children = (
 				199A0CCE1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.h */,
 				199A0CCF1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m */,
+				19F969EE1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19F969F11AA08A4200514C68 /* Main.storyboard in Resources */,
+				19F969EF1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib in Resources */,
 				199A0CB11AA083C4005FBC01 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

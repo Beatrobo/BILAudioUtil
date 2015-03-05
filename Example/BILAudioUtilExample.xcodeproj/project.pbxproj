@@ -11,9 +11,9 @@
 		199A0CA91AA083C4005FBC01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CA81AA083C4005FBC01 /* AppDelegate.m */; };
 		199A0CB11AA083C4005FBC01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 199A0CB01AA083C4005FBC01 /* Images.xcassets */; };
 		199A0CD31AA084C3005FBC01 /* BILAudioSessionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CCA1AA084C3005FBC01 /* BILAudioSessionUtil.m */; };
-		199A0CD41AA084C3005FBC01 /* BILAudioVolumeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CCC1AA084C3005FBC01 /* BILAudioVolumeManager.m */; };
+		199A0CD41AA084C3005FBC01 /* DPSystemVolumeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CCC1AA084C3005FBC01 /* DPSystemVolumeController.m */; };
 		199A0CD51AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CCF1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m */; };
-		199A0CD61AA084C3005FBC01 /* BILStringEncrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CD21AA084C3005FBC01 /* BILStringEncrypter.m */; };
+		199A0CD61AA084C3005FBC01 /* DPStringEncrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CD21AA084C3005FBC01 /* DPStringEncrypter.m */; };
 		19F969EF1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F969EE1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib */; };
 		19F969F11AA08A4200514C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F969F01AA08A4200514C68 /* Main.storyboard */; };
 		7A47B26E71CB9A1C311D8F73 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6435DCF82A0EFB72765318 /* libPods.a */; };
@@ -29,12 +29,12 @@
 		199A0CB01AA083C4005FBC01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		199A0CC91AA084C3005FBC01 /* BILAudioSessionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILAudioSessionUtil.h; sourceTree = "<group>"; };
 		199A0CCA1AA084C3005FBC01 /* BILAudioSessionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILAudioSessionUtil.m; sourceTree = "<group>"; };
-		199A0CCB1AA084C3005FBC01 /* BILAudioVolumeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILAudioVolumeManager.h; sourceTree = "<group>"; };
-		199A0CCC1AA084C3005FBC01 /* BILAudioVolumeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILAudioVolumeManager.m; sourceTree = "<group>"; };
+		199A0CCB1AA084C3005FBC01 /* DPSystemVolumeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSystemVolumeController.h; sourceTree = "<group>"; };
+		199A0CCC1AA084C3005FBC01 /* DPSystemVolumeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSystemVolumeController.m; sourceTree = "<group>"; };
 		199A0CCE1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILAudioVolumeManagerTestViewController.h; sourceTree = "<group>"; };
 		199A0CCF1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILAudioVolumeManagerTestViewController.m; sourceTree = "<group>"; };
-		199A0CD11AA084C3005FBC01 /* BILStringEncrypter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILStringEncrypter.h; sourceTree = "<group>"; };
-		199A0CD21AA084C3005FBC01 /* BILStringEncrypter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILStringEncrypter.m; sourceTree = "<group>"; };
+		199A0CD11AA084C3005FBC01 /* DPStringEncrypter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPStringEncrypter.h; sourceTree = "<group>"; };
+		199A0CD21AA084C3005FBC01 /* DPStringEncrypter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPStringEncrypter.m; sourceTree = "<group>"; };
 		19F969EE1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BILAudioVolumeManagerTestViewController.xib; sourceTree = "<group>"; };
 		19F969F01AA08A4200514C68 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4E6435DCF82A0EFB72765318 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,8 +109,8 @@
 			children = (
 				199A0CC91AA084C3005FBC01 /* BILAudioSessionUtil.h */,
 				199A0CCA1AA084C3005FBC01 /* BILAudioSessionUtil.m */,
-				199A0CCB1AA084C3005FBC01 /* BILAudioVolumeManager.h */,
-				199A0CCC1AA084C3005FBC01 /* BILAudioVolumeManager.m */,
+				199A0CCB1AA084C3005FBC01 /* DPSystemVolumeController.h */,
+				199A0CCC1AA084C3005FBC01 /* DPSystemVolumeController.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -128,8 +128,8 @@
 		199A0CD01AA084C3005FBC01 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				199A0CD11AA084C3005FBC01 /* BILStringEncrypter.h */,
-				199A0CD21AA084C3005FBC01 /* BILStringEncrypter.m */,
+				199A0CD11AA084C3005FBC01 /* DPStringEncrypter.h */,
+				199A0CD21AA084C3005FBC01 /* DPStringEncrypter.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -256,9 +256,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				199A0CD51AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m in Sources */,
-				199A0CD41AA084C3005FBC01 /* BILAudioVolumeManager.m in Sources */,
+				199A0CD41AA084C3005FBC01 /* DPSystemVolumeController.m in Sources */,
 				199A0CA91AA083C4005FBC01 /* AppDelegate.m in Sources */,
-				199A0CD61AA084C3005FBC01 /* BILStringEncrypter.m in Sources */,
+				199A0CD61AA084C3005FBC01 /* DPStringEncrypter.m in Sources */,
 				199A0CA61AA083C4005FBC01 /* main.m in Sources */,
 				199A0CD31AA084C3005FBC01 /* BILAudioSessionUtil.m in Sources */,
 			);

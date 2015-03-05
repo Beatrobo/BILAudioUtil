@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name                  = "BILAudioUtil"
-  s.version               = "0.2"
-  s.summary               = "Util for AVAudioSession, iOS System Volume Hack"
+  s.version               = "0.3"
+  s.summary               = "Util for AVAudioSession"
   s.author                = { "Yusuke SUGAMIYA" => "yusuke.dnpp@gmail.com" }
   s.homepage              = "https://github.com/Beatrobo/BILAudioUtil"
   s.source                = { :git => "git@github.com:Beatrobo/BILAudioUtil.git", :tag => "#{s.version}" }

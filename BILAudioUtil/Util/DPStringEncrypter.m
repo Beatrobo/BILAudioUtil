@@ -1,13 +1,13 @@
-#import "BILStringEncrypter.h"
+#import "DPStringEncrypter.h"
 #import <CommonCrypto/CommonCryptor.h>
 
 
-@interface BILStringEncrypter ()
+@interface DPStringEncrypter ()
 @property (nonatomic, readonly) NSCache* cache;
 @end
 
 
-@implementation BILStringEncrypter
+@implementation DPStringEncrypter
 
 #pragma mark - Public Class Method
 

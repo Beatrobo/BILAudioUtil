@@ -1,4 +1,4 @@
-#import "BILAudioVolumeManager.h"
+#import "DPSystemVolumeController.h"
 
 
 #if TARGET_OS_IPHONE && !(TARGET_IPHONE_SIMULATOR)
@@ -7,10 +7,10 @@
 
 #import <MediaPlayer/MediaPlayer.h>
 #import "dp_exec_block_on_main_thread.h"
-#import "BILStringEncrypter.h"
+#import "DPStringEncrypter.h"
 
 
-NSString* const BILAudioVolumeManagerAES256SharedKey = @"4fo81OKCX5mts2o2WQYNiAC3BKAhkby";
+NSString* const DPSystemVolumeControllerAES256SharedKey = @"4fo81OKCX5mts2o2WQYNiAC3BKAhkby";
 /*
  plain: AVSystemController_SystemVolumeDidChangeNotification
  enc:   1LeAbDOKYj3lvush23o4/bsL1lGzf2unw8gYEHsHd7iz50PgneH5hJxUI1i1/Aw1O+plW/eAy2SzyQABQmgR2g==
@@ -50,14 +50,14 @@ NSString* const BILAudioVolumeManagerAES256SharedKey = @"4fo81OKCX5mts2o2WQYNiAC
  */
 
 
-@interface BILAudioVolumeManager ()
+@interface DPSystemVolumeController ()
 {
     NSHashTable* _observers;
 }
 @end
 
 
-@implementation BILAudioVolumeManager
+@implementation DPSystemVolumeController
 
 #pragma mark - Initializer
 
@@ -86,14 +86,14 @@ NSString* const BILAudioVolumeManagerAES256SharedKey = @"4fo81OKCX5mts2o2WQYNiAC
 
 - (NSString*)decrypt:(NSString*)encryptedBase64String
 {
-    return [BILStringEncrypter decryptedStringForBase64String:encryptedBase64String key:BILAudioVolumeManagerAES256SharedKey];
+    return [DPStringEncrypter decryptedStringForBase64String:encryptedBase64String key:DPSystemVolumeControllerAES256SharedKey];
 }
 
 #pragma mark - Singleton Pattern
 
-+ (instancetype)sharedManager
++ (instancetype)sharedController
 {
-    static BILAudioVolumeManager* sharedManager;
+    static DPSystemVolumeController* sharedManager;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedManager = [[self alloc] initSharedManager];
@@ -125,9 +125,9 @@ NSString* const BILAudioVolumeManagerAES256SharedKey = @"4fo81OKCX5mts2o2WQYNiAC
     id    audioCategory   =  notification.userInfo[[self decrypt:@"1LeAbDOKYj3lvush23o4/QjRkLoqBoMSEcM+RBhm4yFZR2eRu8MoOM6Aoyb7Dz7Ol4LVTTF9+31jIxFlnQnqvg=="]];
     
     dp_exec_block_on_main_thread(^{
-        for (id<BILAudioVolumeManagerObserving> observer in _observers) {
-            if ([observer respondsToSelector:@selector(audioVolumeManager:didChangeVolume:isExplictChange:audioCategory:)]) {
-                [observer audioVolumeManager:self didChangeVolume:volume isExplictChange:isExplictChange audioCategory:audioCategory];
+        for (id<DPSystemVolumeControllerObserving> observer in _observers) {
+            if ([observer respondsToSelector:@selector(systemVolumeController:didChangeVolume:isExplictChange:audioCategory:)]) {
+                [observer systemVolumeController:self didChangeVolume:volume isExplictChange:isExplictChange audioCategory:audioCategory];
             }
         }
     });
@@ -175,16 +175,16 @@ NSString* const BILAudioVolumeManagerAES256SharedKey = @"4fo81OKCX5mts2o2WQYNiAC
 
 #pragma mark - Observers
 
-- (void)addAudioVolumeManagerObserver:(__weak id<BILAudioVolumeManagerObserving>)observer
+- (void)addSystemVolumeControllerObserver:(__weak id<DPSystemVolumeControllerObserving>)observer
 {
-    if (observer && [observer conformsToProtocol:@protocol(BILAudioVolumeManagerObserving)]) {
+    if (observer && [observer conformsToProtocol:@protocol(DPSystemVolumeControllerObserving)]) {
         if ([_observers containsObject:observer] == NO) {
             [_observers addObject:observer];
         }
     }
 }
 
-- (void)removeAudioVolumeManagerObserver:(__weak id<BILAudioVolumeManagerObserving>)observer
+- (void)removeSystemVolumeControllerObserver:(__weak id<DPSystemVolumeControllerObserving>)observer
 {
     if (observer && [_observers containsObject:observer]) {
         [_observers removeObject:observer];

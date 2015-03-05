@@ -1,11 +1,11 @@
 #import "BILAudioVolumeManagerTestViewController.h"
 #import "BILAudioSessionUtil.h"
-#import "BILAudioVolumeManager.h"
+#import "DPSystemVolumeController.h"
 
 
 @interface BILAudioVolumeManagerTestViewController ()
 #if !(TARGET_IPHONE_SIMULATOR)
-<BILAudioVolumeManagerObserving>
+<DPSystemVolumeControllerObserving>
 #endif
 @property (nonatomic, weak) IBOutlet UISlider* ringtoneVolumeSlider;
 @property (nonatomic, weak) IBOutlet UILabel*  ringtoneVolumeLabel;
@@ -23,15 +23,15 @@
     [super viewDidLoad];
     
     #if !(TARGET_IPHONE_SIMULATOR)
-    [[BILAudioVolumeManager sharedManager] addAudioVolumeManagerObserver:self];
+    [[DPSystemVolumeController sharedController] addSystemVolumeControllerObserver:self];
     
     {
-        float volume = [BILAudioVolumeManager sharedManager].volumeForRingtone;
+        float volume = [DPSystemVolumeController sharedController].volumeForRingtone;
         self.ringtoneVolumeSlider.value = volume;
         self.ringtoneVolumeLabel.text = [NSString stringWithFormat:@"%.2f", volume];
     }
     {
-        float volume = [BILAudioVolumeManager sharedManager].volumeForAudioVideo;
+        float volume = [DPSystemVolumeController sharedController].volumeForAudioVideo;
         self.audioVideoVolumeSlider.value = volume;
         self.audioVideoVolumeLabel.text = [NSString stringWithFormat:@"%.2f", volume];
     }
@@ -139,14 +139,14 @@
 - (IBAction)valueChangedRingtoneVolumeSlider:(UISlider*)sender
 {
     #if !(TARGET_IPHONE_SIMULATOR)
-    [BILAudioVolumeManager sharedManager].volumeForRingtone = sender.value;
+    [DPSystemVolumeController sharedController].volumeForRingtone = sender.value;
     #endif
 }
 
 - (IBAction)valueChangedAudioVideoVolumeSlider:(UISlider*)sender
 {
     #if !(TARGET_IPHONE_SIMULATOR)
-    [BILAudioVolumeManager sharedManager].volumeForAudioVideo = sender.value;
+    [DPSystemVolumeController sharedController].volumeForAudioVideo = sender.value;
     #endif
 }
 
@@ -154,10 +154,10 @@
 
 #pragma mark - BILAudioVolumeManagerObserving
 
-- (void)audioVolumeManager:(BILAudioVolumeManager*)audioVolumeManager
-           didChangeVolume:(float)volume
-           isExplictChange:(BOOL)isExplictChange
-             audioCategory:(id)audioCategory
+- (void)systemVolumeController:(DPSystemVolumeController*)audioVolumeManager
+               didChangeVolume:(float)volume
+               isExplictChange:(BOOL)isExplictChange
+                 audioCategory:(id)audioCategory
 {
     if ([audioCategory isKindOfClass:[NSString class]] && [audioCategory isEqualToString:@"Ringtone"]) {
         if (self.ringtoneVolumeSlider.isTracking == NO) {

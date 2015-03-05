@@ -11,10 +11,8 @@
 		199A0CA91AA083C4005FBC01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CA81AA083C4005FBC01 /* AppDelegate.m */; };
 		199A0CB11AA083C4005FBC01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 199A0CB01AA083C4005FBC01 /* Images.xcassets */; };
 		199A0CD31AA084C3005FBC01 /* BILAudioSessionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CCA1AA084C3005FBC01 /* BILAudioSessionUtil.m */; };
-		199A0CD41AA084C3005FBC01 /* DPSystemVolumeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CCC1AA084C3005FBC01 /* DPSystemVolumeController.m */; };
-		199A0CD51AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CCF1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m */; };
-		199A0CD61AA084C3005FBC01 /* DPStringEncrypter.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CD21AA084C3005FBC01 /* DPStringEncrypter.m */; };
-		19F969EF1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F969EE1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib */; };
+		199A0CD51AA084C3005FBC01 /* BILAudioSessionUtilTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199A0CCF1AA084C3005FBC01 /* BILAudioSessionUtilTestViewController.m */; };
+		19F969EF1AA087D500514C68 /* BILAudioSessionUtilTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F969EE1AA087D500514C68 /* BILAudioSessionUtilTestViewController.xib */; };
 		19F969F11AA08A4200514C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F969F01AA08A4200514C68 /* Main.storyboard */; };
 		7A47B26E71CB9A1C311D8F73 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6435DCF82A0EFB72765318 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -29,13 +27,9 @@
 		199A0CB01AA083C4005FBC01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		199A0CC91AA084C3005FBC01 /* BILAudioSessionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILAudioSessionUtil.h; sourceTree = "<group>"; };
 		199A0CCA1AA084C3005FBC01 /* BILAudioSessionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILAudioSessionUtil.m; sourceTree = "<group>"; };
-		199A0CCB1AA084C3005FBC01 /* DPSystemVolumeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSystemVolumeController.h; sourceTree = "<group>"; };
-		199A0CCC1AA084C3005FBC01 /* DPSystemVolumeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSystemVolumeController.m; sourceTree = "<group>"; };
-		199A0CCE1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILAudioVolumeManagerTestViewController.h; sourceTree = "<group>"; };
-		199A0CCF1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILAudioVolumeManagerTestViewController.m; sourceTree = "<group>"; };
-		199A0CD11AA084C3005FBC01 /* DPStringEncrypter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPStringEncrypter.h; sourceTree = "<group>"; };
-		199A0CD21AA084C3005FBC01 /* DPStringEncrypter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPStringEncrypter.m; sourceTree = "<group>"; };
-		19F969EE1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BILAudioVolumeManagerTestViewController.xib; sourceTree = "<group>"; };
+		199A0CCE1AA084C3005FBC01 /* BILAudioSessionUtilTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILAudioSessionUtilTestViewController.h; sourceTree = "<group>"; };
+		199A0CCF1AA084C3005FBC01 /* BILAudioSessionUtilTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILAudioSessionUtilTestViewController.m; sourceTree = "<group>"; };
+		19F969EE1AA087D500514C68 /* BILAudioSessionUtilTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BILAudioSessionUtilTestViewController.xib; sourceTree = "<group>"; };
 		19F969F01AA08A4200514C68 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4E6435DCF82A0EFB72765318 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45431AD5EF99262E33601FC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,7 +92,6 @@
 			children = (
 				199A0CC81AA084C3005FBC01 /* Class */,
 				199A0CCD1AA084C3005FBC01 /* UserInterface */,
-				199A0CD01AA084C3005FBC01 /* Util */,
 			);
 			name = BILAudioUtil;
 			path = ../BILAudioUtil;
@@ -109,8 +102,6 @@
 			children = (
 				199A0CC91AA084C3005FBC01 /* BILAudioSessionUtil.h */,
 				199A0CCA1AA084C3005FBC01 /* BILAudioSessionUtil.m */,
-				199A0CCB1AA084C3005FBC01 /* DPSystemVolumeController.h */,
-				199A0CCC1AA084C3005FBC01 /* DPSystemVolumeController.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -118,20 +109,11 @@
 		199A0CCD1AA084C3005FBC01 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				199A0CCE1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.h */,
-				199A0CCF1AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m */,
-				19F969EE1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib */,
+				199A0CCE1AA084C3005FBC01 /* BILAudioSessionUtilTestViewController.h */,
+				199A0CCF1AA084C3005FBC01 /* BILAudioSessionUtilTestViewController.m */,
+				19F969EE1AA087D500514C68 /* BILAudioSessionUtilTestViewController.xib */,
 			);
 			path = UserInterface;
-			sourceTree = "<group>";
-		};
-		199A0CD01AA084C3005FBC01 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				199A0CD11AA084C3005FBC01 /* DPStringEncrypter.h */,
-				199A0CD21AA084C3005FBC01 /* DPStringEncrypter.m */,
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 		2F48F07EDEBCDCD988F91CB4 /* Frameworks */ = {
@@ -210,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F969F11AA08A4200514C68 /* Main.storyboard in Resources */,
-				19F969EF1AA087D500514C68 /* BILAudioVolumeManagerTestViewController.xib in Resources */,
+				19F969EF1AA087D500514C68 /* BILAudioSessionUtilTestViewController.xib in Resources */,
 				199A0CB11AA083C4005FBC01 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,10 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				199A0CD51AA084C3005FBC01 /* BILAudioVolumeManagerTestViewController.m in Sources */,
-				199A0CD41AA084C3005FBC01 /* DPSystemVolumeController.m in Sources */,
+				199A0CD51AA084C3005FBC01 /* BILAudioSessionUtilTestViewController.m in Sources */,
 				199A0CA91AA083C4005FBC01 /* AppDelegate.m in Sources */,
-				199A0CD61AA084C3005FBC01 /* DPStringEncrypter.m in Sources */,
 				199A0CA61AA083C4005FBC01 /* main.m in Sources */,
 				199A0CD31AA084C3005FBC01 /* BILAudioSessionUtil.m in Sources */,
 			);

@@ -1,9 +1,11 @@
-#import "BILAudioVolumeManagerTestViewController.h"
+#import "BILAudioSessionUtilTestViewController.h"
 #import "BILAudioSessionUtil.h"
+#if !(TARGET_IPHONE_SIMULATOR)
 #import "DPSystemVolumeController.h"
+#endif
 
 
-@interface BILAudioVolumeManagerTestViewController ()
+@interface BILAudioSessionUtilTestViewController ()
 #if !(TARGET_IPHONE_SIMULATOR)
 <DPSystemVolumeControllerObserving>
 #endif
@@ -14,7 +16,7 @@
 @end
 
 
-@implementation BILAudioVolumeManagerTestViewController
+@implementation BILAudioSessionUtilTestViewController
 
 #pragma mark - UIViewController
 

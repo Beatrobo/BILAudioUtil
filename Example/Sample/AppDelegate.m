@@ -1,5 +1,5 @@
 #import "AppDelegate.h"
-#import "BILAudioVolumeManagerTestViewController.h"
+#import "BILAudioSessionUtilTestViewController.h"
 
 
 @interface AppDelegate ()
@@ -11,7 +11,7 @@
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
-    self.window.rootViewController = [[BILAudioVolumeManagerTestViewController alloc] initWithNibName:nil bundle:nil];
+    self.window.rootViewController = [[BILAudioSessionUtilTestViewController alloc] initWithNibName:nil bundle:nil];
     return YES;
 }
 

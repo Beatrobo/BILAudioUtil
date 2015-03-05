@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.requires_arc          = true
   
-  s.ios.frameworks        = 'AVFoundation', 'MediaPlayer'
+  s.ios.frameworks        = 'AVFoundation'
   
   s.dependency 'dp_exec_block_on_main_thread'
   

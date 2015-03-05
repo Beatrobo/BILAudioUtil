@@ -6,10 +6,8 @@ BILAudioUtil
   
 ### Require Framework  
 - `AVFoundation.framework`  
-- `MediaPlayer.framework`  
   
 * * *
   
 BIL は Beatrobo Inc Library から取ってる。  
 !!! iOS Only !!!  
-プライベート API を叩いてデバイスの音量調整するやつも入ってるよ！！！  

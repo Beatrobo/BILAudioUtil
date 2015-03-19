@@ -4,7 +4,6 @@
 #if TARGET_OS_IPHONE && !(TARGET_IPHONE_SIMULATOR)
 
 
-#import <AVFoundation/AVAudioSession.h>
 #import "dp_exec_block_on_main_thread.h"
 
 
@@ -34,43 +33,48 @@
 
 + (BOOL)setAudioSessionCategory:(NSString*)category withOptions:(AVAudioSessionCategoryOptions)options
 {
+    BOOL success = NO;
+    NSError* error = nil;
+    success = [[AVAudioSession sharedInstance] setCategory:category withOptions:options error:&error];
+    if(success == NO || error){
+        NSLog(@"setCategory:withOption: failure, error: %@", error);
+    }
+    return success;
+}
+
++ (BOOL)setAudioSessionCategoryIfNeeded:(NSString*)category withOptions:(AVAudioSessionCategoryOptions)options
+{
     if ([[[AVAudioSession sharedInstance] category] isEqualToString:category]) {
         return YES;
     }
     else {
-        BOOL success = NO;
-        NSError* error = nil;
-        success = [[AVAudioSession sharedInstance] setCategory:category withOptions:options error:&error];
-        if(success == NO || error){
-            NSLog(@"setCategory:withOption: failure, error: %@", error);
-        }
-        return success;
+        return [self setAudioSessionCategory:category withOptions:options];
     }
 }
 
 + (BOOL)setAudioSessionCategoryAmbientIfNeeded
 {
-    return [self setAudioSessionCategory:AVAudioSessionCategoryAmbient withOptions:AVAudioSessionCategoryOptionMixWithOthers];
+    return [self setAudioSessionCategoryIfNeeded:AVAudioSessionCategoryAmbient withOptions:AVAudioSessionCategoryOptionMixWithOthers];
 }
 
 + (BOOL)setAudioSessionCategorySoloAmbientIfNeeded
 {
-    return [self setAudioSessionCategory:AVAudioSessionCategorySoloAmbient withOptions:AVAudioSessionCategoryOptionMixWithOthers];
+    return [self setAudioSessionCategoryIfNeeded:AVAudioSessionCategorySoloAmbient withOptions:AVAudioSessionCategoryOptionMixWithOthers];
 }
 
 + (BOOL)setAudioSessionCategoryPlaybackIfNeeded
 {
-    return [self setAudioSessionCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers];
+    return [self setAudioSessionCategoryIfNeeded:AVAudioSessionCategoryPlayback withOptions:0];
 }
 
 + (BOOL)setAudioSessionCategoryRecordIfNeeded
 {
-    return [self setAudioSessionCategory:AVAudioSessionCategoryRecord withOptions:0];
+    return [self setAudioSessionCategoryIfNeeded:AVAudioSessionCategoryRecord withOptions:0];
 }
 
 + (BOOL)setAudioSessionCategoryPlayAndRecordIfNeeded
 {
-    return [self setAudioSessionCategory:AVAudioSessionCategoryPlayAndRecord withOptions:AVAudioSessionCategoryOptionDefaultToSpeaker];
+    return [self setAudioSessionCategoryIfNeeded:AVAudioSessionCategoryPlayAndRecord withOptions:AVAudioSessionCategoryOptionDefaultToSpeaker];
 }
 
 + (BOOL)setAudioSessionActive:(BOOL)active

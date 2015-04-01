@@ -9,5 +9,6 @@ BILAudioUtil
   
 * * *
   
-BIL は Beatrobo Inc Library から取ってる。  
-!!! iOS Only !!!  
+BIL is "Beatrobo Inc Library" prefix.  
+  
+!!! Only for iOS !!!  

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "BILAudioUtil"
-  s.version               = "0.4.1"
+  s.version               = "0.5"
   s.summary               = "Util for AVAudioSession"
   s.author                = { "Yusuke SUGAMIYA" => "yusuke.dnpp@gmail.com" }
   s.homepage              = "https://github.com/Beatrobo/BILAudioUtil"

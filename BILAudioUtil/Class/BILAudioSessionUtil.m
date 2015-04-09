@@ -1,7 +1,7 @@
 #import "BILAudioSessionUtil.h"
 
 
-#if TARGET_OS_IPHONE && !(TARGET_IPHONE_SIMULATOR)
+#if TARGET_OS_IPHONE
 
 
 #import "dp_exec_block_on_main_thread.h"

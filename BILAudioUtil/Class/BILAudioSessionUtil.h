@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 
 
-#if TARGET_OS_IPHONE && !(TARGET_IPHONE_SIMULATOR)
+#if TARGET_OS_IPHONE
 
 
 #import <AVFoundation/AVAudioSession.h>

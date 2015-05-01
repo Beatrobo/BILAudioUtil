@@ -1,7 +1,7 @@
 BILAudioUtil
 =================
 
-[![Build Status](http://img.shields.io/travis/Beatrobo/BILAudioUtil/development.svg?style=flat-square)](https://travis-ci.org/Beatrobo/BILAudioUtil)
+[![Build Status](http://img.shields.io/travis/Beatrobo/BILAudioUtil.svg?style=flat-square)](https://travis-ci.org/Beatrobo/BILAudioUtil)
 [![Pod Version](http://img.shields.io/cocoapods/v/BILAudioUtil.svg?style=flat-square)](http://cocoadocs.org/docsets/BILAudioUtil/)
 [![Pod Platform](http://img.shields.io/cocoapods/p/BILAudioUtil.svg?style=flat-square)](http://cocoadocs.org/docsets/BILAudioUtil/)
 [![Pod License](http://img.shields.io/cocoapods/l/BILAudioUtil.svg?style=flat-square)](http://opensource.org/licenses/MIT)

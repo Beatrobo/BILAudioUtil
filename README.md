@@ -18,6 +18,10 @@ BIL is "Beatrobo Inc Library" prefix.
 
 AVAudioSession Util
 
+# Usage
+
+See [BILAudioSessionUtil.h](BILAudioUtil/Class/BILAudioSessionUtil.h)
+
 # LICENSE
 
 Copyright (c) 2015 Beatrobo, Inc

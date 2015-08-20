@@ -20,7 +20,7 @@ AVAudioSession Util
 
 # Usage
 
-See [BILAudioSessionUtil.h](BILAudioUtil/Class/BILAudioSessionUtil.h)
+See [BILAudioSessionUtil.h](BILAudioUtil/Class/BILAudioSessionUtil.h) and [BILAudioRouteChangeDetector.h](BILAudioUtil/Class/BILAudioRouteChangeDetector.h)
 
 # LICENSE
 

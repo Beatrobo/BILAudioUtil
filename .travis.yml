@@ -9,7 +9,7 @@ before_install:
   - bundle install --path=vendor/bundle
 
 before_script:
-  - bundle exec pod repo update
+  - bundle exec pod repo update > /dev/null 2>&1
 
 script:
   - bundle exec pod lib lint --sources='https://github.com/CocoaPods/Specs'

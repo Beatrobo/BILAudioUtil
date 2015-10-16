@@ -1,17 +1,15 @@
 Pod::Spec.new do |s|
   s.name                  = 'BILAudioUtil'
-  s.version               = '1.1'
+  s.version               = '2.0.0'
   s.summary               = 'AVAudioSession Util'
   s.author                = { 'Yusuke SUGAMIYA' => 'yusuke.dnpp@gmail.com' }
-  s.homepage              = 'https://github.com/Beatrobo/BILAudioUtil'
+  s.homepage              = 'https://github.com/dnpp73/DPAudioUtil'
   s.source                = { :git => 'https://github.com/Beatrobo/BILAudioUtil.git', :tag => "#{s.version}" }
   s.ios.source_files      = 'BILAudioUtil/**/*.{h,m}'
   s.ios.deployment_target = '6.0'
   s.requires_arc          = true
   
-  s.ios.frameworks        = 'AVFoundation'
-  
-  s.dependency 'dp_exec_block_on_main_thread'
+  s.dependency 'DPAudioUtil'
   
   s.license = {
    :type => 'MIT',

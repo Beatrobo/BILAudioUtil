@@ -6,21 +6,9 @@ BILAudioUtil
 [![Pod Platform](http://img.shields.io/cocoapods/p/BILAudioUtil.svg?style=flat-square)](http://cocoadocs.org/docsets/BILAudioUtil/)
 [![Pod License](http://img.shields.io/cocoapods/l/BILAudioUtil.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
-### Dependency
-* `dp_exec_block_on_main_thread`
-
-### Require Framework
-* `AVFoundation.framework`
-
 # Description
 
-BIL is "Beatrobo Inc Library" prefix.
-
-AVAudioSession Util
-
-# Usage
-
-See [BILAudioSessionUtil.h](BILAudioUtil/Class/BILAudioSessionUtil.h) and [BILAudioRouteChangeDetector.h](BILAudioUtil/Class/BILAudioRouteChangeDetector.h)
+This repository has been move to [`DPAudioUtil`](https://github.com/dnpp73/DPAudioUtil)
 
 # LICENSE
 
